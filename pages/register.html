@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/4.8.0/react-datepicker.min.css">
+  <link rel="stylesheet" href="/assets/styles/RegisterPage.css">
+</head>
+<body>
+
+  <div class="register-container">
+    <div class="register-card">
+      <h3 class="register-title">Create a New Account</h3>
+      <form id="registerForm" class="form-group">
+        <div class="form-row">
+          <div class="input-group full-width">
+            <label class="input-label">Full Name</label>
+            <input type="text" id="fullName" required class="input-field">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group half-width">
+            <label class="input-label">Email</label>
+            <input type="email" id="email" required class="input-field">
+          </div>
+          <div class="input-group half-width">
+            <label class="input-label">Phone Number</label>
+            <input type="tel" id="phone" class="input-field">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group full-width">
+            <label class="input-label">Date of Birth</label>
+            <input type="date" id="dob" class="input-field" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group half-width">
+            <label class="input-label">Password</label>
+            <input type="password" id="password" required class="input-field">
+          </div>
+          <div class="input-group half-width">
+            <label class="input-label">Confirm Password</label>
+            <input type="password" id="confirmPassword" required class="input-field">
+          </div>
+        </div>
+
+        <p id="error-message" class="error-message"></p>
+
+        <button type="submit" id="submitButton" class="submit-button">Sign Up</button>
+
+        <div class="switch-to-login">
+          Already have an account? <a href="/pages/LoginPage.html" class="link">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js"></script>
+  <script type="module" src="/assets/scripts/firebase.js"></script>
+  <script  type="module" src="/assets/scripts/register.js"></script>
+</body>
+</html>

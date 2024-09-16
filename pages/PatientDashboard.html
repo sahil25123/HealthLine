@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard - HealthLine</title>
+  <link rel="stylesheet" href="/assets/styles/PatientDashboard.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/dashboard">
+          <img src="/assets/images/logo.jpg" alt="HealthLine Logo" class="logo-image">
+        </a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/dashboard" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/appointments" class="nav-link">Appointments</a></li>
+          <li class="nav-item"><a href="/medical-records" class="nav-link">Medical Records</a></li>
+          <li class="nav-item"><a href="/prescriptions" class="nav-link">Prescriptions</a></li>
+          <li class="nav-item"><a href="/analytics" class="nav-link">Analytics</a></li>
+        </ul>
+      </nav>
+
+      <!-- User Profile -->
+      <div class="user-profile">
+        <img src="/assets/images/user-icon.jpeg" alt="User Profile" class="profile-image">
+        <div class="profile-info">
+          <span class="profile-name">John Doe</span>
+          <button class="dropdown-button">▼</button>
+        </div>
+        <div class="dropdown-menu">
+          <a href="/profile" class="dropdown-link">Profile</a>
+          <a href="/settings" class="dropdown-link">Settings</a>
+          <a href="/logout" class="dropdown-link">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content"></main>
+    <section class="overview">
+      <h2>Overview</h2>
+      <div class="overview-cards">
+        <div class="card">
+          <img src="/assets/images/icons/appointments.svg" alt="Appointments" class="card-icon">
+          <div class="card-content">
+            <h3>Appointments</h3>
+            <p>Manage your upcoming and past appointments with ease.</p>
+            <a href="/appointments" class="card-link">View Appointments</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/images/icons/records.svg" alt="Medical Records" class="card-icon">
+          <div class="card-content">
+            <h3>Medical Records</h3>
+            <p>Access and review your medical history securely.</p>
+            <a href="/medical-records" class="card-link">View Records</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/images/icons/prescriptions.svg" alt="Prescriptions" class="card-icon">
+          <div class="card-content">
+            <h3>Prescriptions</h3>
+            <p>Track and manage your prescriptions and medication.</p>
+            <a href="/prescriptions" class="card-link">View Prescriptions</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/images/icons/analytics.svg" alt="Analytics" class="card-icon">
+          <div class="card-content">
+            <h3>Analytics</h3>
+            <p>Monitor your health trends and insights over time.</p>
+            <a href="/analytics" class="card-link">View Analytics</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

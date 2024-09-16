@@ -1,0 +1,189 @@
+/* Header Styling */
+.header {
+    background-color: #343a40; /* Dark background */
+    border-bottom: 1px solid #495057;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* White text color */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .nav-menu {
+    flex: 2;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Accent color */
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+  }
+  
+  .dropdown-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff; /* White text color */
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .dropdown-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-profile:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    margin: 20px;
+  }
+/* Main Content Styling */
+.main-content {
+    margin: 20px;
+  }
+  
+  .overview {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overview h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .overview-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: calc(50% - 20px);
+    transition: background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #e9ecef;
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+    

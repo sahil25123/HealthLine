@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthLine - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/LoginPage.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h1 class="login-title">Welcome to HealthLine</h1>
+    <p>Secure telemedicine consultation and healthcare services.</p>
+    <form class="loginForm">
+      <div class="input-group">
+        <label class="input-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" class="input-field" required>
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" class="input-field" required>
+      </div>
+      <div class="error-message" id="error-message"></div>
+      <button type="submit" class="submit-button" id="submit-button">Sign In</button>
+    </form>
+    
+    <p class="switch-to-register">
+      Don't have an account? <a href="/pages/register.html" class="link">Sign Up</a>
+    </p>
+    
+    <div class="divider">
+      <span class="divider-line"></span>
+      <span class="divider-text">OR</span>
+      <span class="divider-line"></span>
+    </div>
+    
+    <button class="google-button" id="google-signin-button">
+      <img src="/assets/images/google-icon.png" alt="Google Icon" class="google-icon">
+      Continue with Google
+    </button>
+  </div>
+
+  <!-- Load Firebase JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <!-- Custom Firebase configuration -->
+  <script  src="/assets/scripts/firebase.js"></script>
+  
+  <!-- Login page script -->
+  <script src="/assets/scripts/login.js"></script>
+
+</body>
+</html>
