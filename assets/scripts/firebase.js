@@ -8,6 +8,9 @@ const firebaseConfig = {
   measurementId: 'G-VP5G3TXF2N',
 };
 
-// Initialize Firebase
+// Initialize Firebase (use compat to avoid modular issues)
 firebase.initializeApp(firebaseConfig);
+
+// Initialize services
 const auth = firebase.auth();
+const db = firebase.firestore();
