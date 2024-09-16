@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HealthLine - Your trusted telemedicine platform for easy and secure health consultations from home.">
   <title>HealthLine | Telemedicine Platform</title>
   <link rel="stylesheet" href="/assets/styles/HomePage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <div class="container">
-      <div class="logo">HealthLine</div>
-      <nav>
+      <div class="logo">
+        <a href="/">HealthLine</a>
+      </div>
+      <nav aria-label="Main Navigation">
         <ul class="nav-menu">
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
@@ -20,7 +24,7 @@
         </ul>
       </nav>
       <a href="/pages/LoginPage.html" class="cta">Login</a>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" aria-label="Mobile Menu Toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -28,12 +32,11 @@
     </div>
   </header>
   
-
   <!-- Hero Section -->
-  <section id="hero">
+  <section id="hero" aria-labelledby="hero-title">
     <div class="hero-container">
       <div class="hero-content">
-        <h1>Welcome to HealthLine</h1>
+        <h1 id="hero-title">Welcome to HealthLine</h1>
         <p>Your Telemedicine Platform for Easy and Secure Health Consultations</p>
         <div class="cta-buttons">
           <a href="#features" class="btn-primary">Get Started</a>
@@ -43,14 +46,13 @@
     </div>
   </section>
   
-  
   <!-- About HealthLine Section -->
-  <section id="about-healthline">
+  <section id="about-healthline" aria-labelledby="about-title">
     <div class="container">
       <div class="about-content">
         <div class="about-text">
-          <h2>About HealthLine</h2>
-          <p>HealthLine is your trusted telemedicine platform, offering video consultations, e-prescriptions, and secure health data management for patients. Our platform ensures you get the best healthcare from the comfort of your home.</p>
+          <h2 id="about-title">About HealthLine</h2>
+          <p>HealthLine is your trusted telemedicine platform, offering video consultations, e-prescriptions, and secure health data management. Get the best healthcare from the comfort of your home.</p>
           <div class="features-list">
             <div class="feature-item">
               <img src="/assets/images/video-call-icon.png" alt="Video Consultation">
@@ -60,12 +62,12 @@
             <div class="feature-item">
               <img src="/assets/images/secure-stroage-icon.png" alt="Secure Storage">
               <h3>Secure Medical Records</h3>
-              <p>All your medical records are stored securely for easy access.</p>
+              <p>Your medical records are stored securely for easy access.</p>
             </div>
             <div class="feature-item">
-              <img src="/assets/images/precisption icon.png icon.png" alt="E-Prescriptions">
+              <img src="/assets/images/precisption icon.png" alt="E-Prescriptions">
               <h3>E-Prescriptions</h3>
-              <p>Get your prescriptions online after your consultation.</p>
+              <p>Get prescriptions online after your consultation.</p>
             </div>
           </div>
         </div>
@@ -76,11 +78,10 @@
     </div>
   </section>
   
-
   <!-- Features Section -->
-  <section id="features">
+  <section id="features" aria-labelledby="features-title">
     <div class="container">
-      <h2>Our Features</h2>
+      <h2 id="features-title">Our Features</h2>
       <div class="feature-card">
         <h3>Video and Voice Calls</h3>
         <p>Consult doctors via high-quality video and voice calls anytime, anywhere.</p>
@@ -91,76 +92,141 @@
       </div>
       <div class="feature-card">
         <h3>Prescription Management</h3>
-        <p>Receive your prescriptions digitally and get them filled at any pharmacy.</p>
+        <p>Receive prescriptions digitally and get them filled at any pharmacy.</p>
       </div>
     </div>
   </section>
 
   <!-- How It Works Section -->
-  <section id="how-it-works">
+  <section id="how-it-works" aria-labelledby="how-it-works-title">
     <div class="container">
-      <h2>How It Works</h2>
+      <h2 id="how-it-works-title">How It Works</h2>
+      <p class="intro-text">Get started with HealthLine in four simple steps. Our platform is designed to make healthcare easy and accessible from the comfort of your home.</p>
       <div class="steps">
         <div class="step">
+          <div class="step-icon">
+            <i class="fa-solid fa-user" alt="Sign Up Icon"></i>
+          </div>
           <h3>Step 1: Sign Up</h3>
-          <p>Create your account in just a few minutes.</p>
+          <p>Create your account in just a few minutes. All it takes is your basic information.</p>
         </div>
         <div class="step">
+          <div class="step-icon">
+            <i class="fa-regular fa-calendar-check" alt="Book Appointment Icon"></i>
+          </div>
           <h3>Step 2: Book an Appointment</h3>
-          <p>Select a doctor and time that works for you.</p>
+          <p>Select a doctor and choose a time that fits your schedule for your consultation.</p>
         </div>
         <div class="step">
+          <div class="step-icon">
+            <i class="fas fa-user-md" alt="Consultation Icon"></i> 
+          </div>
           <h3>Step 3: Video Consultation</h3>
-          <p>Consult with your doctor through a secure video call.</p>
+          <p>Meet with your doctor through a secure and encrypted video call from anywhere.</p>
         </div>
         <div class="step">
+          <div class="step-icon">
+            <i class="fa-solid fa-prescription-bottle-medical" alt="Prescription"></i>
+          </div>
           <h3>Step 4: Receive Prescription</h3>
-          <p>Get your prescription digitally after your consultation.</p>
+          <p>Get your prescription instantly after the consultation and manage it online.</p>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- Meet Our Doctors Section -->
-  <section id="doctors">
+  <section id="doctors" aria-labelledby="doctors-title">
     <div class="container">
-      <h2>Meet Our Doctors</h2>
-      <div class="doctor-card">
-        <img src="/assets/images/doctor1.jpg" alt="Doctor 1">
-        <h3>Dr. Sarah Jones</h3>
-        <p>Cardiologist</p>
-      </div>
-      <div class="doctor-card">
-        <img src="/assets/images/doctor1.jpg" alt="Doctor 2">
-        <h3>Dr. Mark Wilson</h3>
-        <p>Pediatrician</p>
+      <h2 id="doctors-title">Meet Our Doctors</h2>
+      <div class="row">
+        <div class="doctor-card">
+          <img src="/assets/images/doctor3.jpg" alt="Dr.Amber Denesik">
+          <h3>Dr.Amber Denesik</h3>
+          <p>Cardiologist</p>
+        </div>
+        <div class="doctor-card">
+          <img src="/assets/images/doctor2.jpg" alt="Dr.Mark Wilson">
+          <h3>Dr.Mark Wilson</h3>
+          <p>Pediatrician</p>
+        </div>
+        <div class="doctor-card">
+          <img src="/assets/images/doctor1.jpg" alt="Dr.Lowell Deckow">
+          <h3>Dr.Lowell Deckow</h3>
+          <p>Neurologist</p>
+        </div>
+        <div class="doctor-card">
+          <img src="/assets/images/doctor4.jpg" alt="Dr.Arden Gerlach">
+          <h3>Dr.Arden Gerlach</h3>
+          <p>Allergies</p>
+        </div>
       </div>
     </div>
   </section>
 
+
   <!-- Testimonials Section -->
-  <section id="testimonials">
+  <section id="testimonials" aria-labelledby="testimonials-title">
     <div class="container">
-      <h2>What Our Patients Say</h2>
+      <h2 id="testimonials-title">What Our Patients Say</h2>
       <div class="testimonial">
         <p>"HealthLine made it so easy to consult with my doctor. The video call was smooth, and I received my prescription right after!"</p>
         <h3>- John Doe</h3>
       </div>
     </div>
   </section>
-  
+
+  <!-- Contact-Us-->
+
+  <!-- <div class="ContactUs">
+      <div class="Contact">
+        <div class="contact-title">
+            <span>Contact Us</span>
+            <h2>Contact Our Specialist Doctor At Any Time For Any Of Your Ailments</h2> 
+        </div>
+        <div class="Info">
+            <form>
+              <div class="row">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name*">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject*">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Message*"></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="default-btn active">
+                      " Send Message "
+                    </button>
+                </div>
+              <div>
+            </form>
+        </div>
+      </div>
+  <div> -->
+
 
   <!-- Footer Section -->
-  <footer>
+  <!-- <footer>
     <div class="container">
       <p>&copy; 2024 HealthLine. All rights reserved.</p>
       <ul class="social-media">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
       </ul>
     </div>
-  </footer>
-  
+  </footer> -->
+
+  <script src="/assets/scripts/menu.js"></script> <!-- Optional JS for Hamburger Menu -->
 </body>
 </html>

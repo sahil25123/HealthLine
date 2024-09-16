@@ -1,444 +1,444 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  h1, h2, h3 {
-    margin-bottom: 15px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
- /* Hero Section */
- /* Hero Section */
-#hero {
-    background: url('/assets/images/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #ffffff;
-  }
-  
-  .hero-container {
-    text-align: center;
-    max-width: 1200px;
-    padding: 0 20px;
-  }
-  
-  .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 30px;
-  }
-  
-  .cta-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .btn-primary, .btn-secondary {
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .btn-primary {
-    background-color: #004aad;
-  }
-  
-  .btn-primary:hover {
-    background-color: #00308f;
-    box-shadow: 0 8px 15px rgba(0, 74, 173, 0.3);
-  }
-  
-  .btn-secondary {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #ffffff;
-    color: #004aad;
-    border-color: #004aad;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero-content p {
-      font-size: 1.2rem;
-    }
-  
-    .cta-buttons {
-      flex-direction: column;
-      gap: 15px;
-    }
-  }
-  
-  
-  /* Features Section */
- /* About HealthLine Section */
-#about-healthline {
-    background-color: #f7f9fc;
-    padding: 80px 0;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-  }
-  
-  .about-content {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .about-text {
-    flex: 1;
-  }
-  
-  .about-text h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #004aad;
-  }
-  
-  .about-text p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
-    line-height: 1.6;
-  }
-  
-  .features-list {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .feature-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 200px;
-  }
-  
-  .feature-item img {
-    width: 60px;
-    margin-bottom: 15px;
-  }
-  
-  .feature-item h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .feature-item p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .about-image {
-    flex: 1;
-  }
-  
-  .about-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Hover effects */
-  .feature-item:hover h3 {
-    color: #004aad;
-  }
-  
-  .feature-item:hover p {
-    color: #004aad;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .features-list {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .about-image img {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #004aad;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  footer ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  /* Header Section */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header Section */
 header {
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow */
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #004aad;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow */
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  background-color: #004aad; /* Darker background on scroll */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow on scroll */
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #004aad;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+header.scrolled .logo {
+  color: #ffffff; /* Change logo color when scrolling */
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header.scrolled nav ul li a {
+  color: #ffffff; /* Change link color on scroll */
+}
+
+nav ul li a:hover {
+  color: #004aad; /* Hover color change */
+  border-bottom: 2px solid #004aad; /* Underline effect on hover */
+}
+
+header.scrolled nav ul li a:hover {
+  border-bottom: 2px solid #ffffff; /* White underline when scrolling */
+}
+
+.cta {
+  background-color: #004aad;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #00308f;
+  box-shadow: 0 8px 15px rgba(0, 74, 173, 0.3); /* Adds shadow on hover */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
   nav ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333333;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 10px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #004aad; /* Hover color change */
-    border-bottom: 2px solid #004aad; /* Underline effect on hover */
-  }
-  
-  .cta {
-    background-color: #004aad;
-    padding: 10px 25px;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .cta:hover {
-    background-color: #00308f;
-    box-shadow: 0 8px 15px rgba(0, 74, 173, 0.3); /* Adds shadow on hover */
-  }
-  
-  /* Layout */
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Responsive Styles */
-  .hamburger-menu {
     display: none;
   }
-  
-  @media (max-width: 768px) {
-    nav ul {
-      display: none;
-    }
-    
-    .hamburger-menu {
-      display: block;
-      cursor: pointer;
-    }
-    
-    .hamburger-menu span {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px;
-      background-color: #333333;
-      transition: all 0.3s ease;
-    }
-    
-    .cta {
-      display: none;
-    }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
   }
-  /* Meet Our Doctors Section */
-#doctors {
-    background-color: #f7f9fc;
-    padding: 80px 0;
-    text-align: center;
+
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333333;
+    transition: all 0.3s ease;
   }
-  
-  #doctors h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #004aad;
-    margin-bottom: 50px;
+
+  .cta {
+    display: none;
   }
-  
-  .doctor-card {
-    display: inline-block;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hero Section */
+#hero {
+  background: url('/assets/images/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.hero-container {
+  text-align: center;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #004aad;
+}
+
+.btn-primary:hover {
+  background-color: #00308f;
+  box-shadow: 0 8px 15px rgba(0, 74, 173, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #004aad;
+  border-color: #004aad;
+}
+
+/* About HealthLine Section */
+#about-healthline {
+  background-color: #f7f9fc;
+  padding: 80px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+#features {
+  background-color: #fff;
+  /* padding: 60px 0; */
+  text-align: center;
+}
+
+#features-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.feature-card {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* How It Works Section */
+#how-it-works {
+  background-color: #f4f4f9;
+  padding: 60px 0;
+}
+
+#how-it-works-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #007bff;
+  text-align: center;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: #fff;
+  flex: 1 1 22%;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.step img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.step p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .doctor-card img {
-    width: 100%;
-    border-bottom: 5px solid #004aad;
+
+  .step {
+    width: 90%;
+    margin-bottom: 20px;
   }
-  
-  .doctor-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 15px 0 5px;
-  }
-  
-  .doctor-card p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  /* Hover Effects */
-  .doctor-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .doctor-card {
-      width: 80%;
-      margin: 20px auto;
-    }
-  }
-  /* Testimonials Section */
-#testimonials {
-    background-color: #ffffff;
-    padding: 80px 0;
-    text-align: center;
-  }
-  
-  #testimonials h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #004aad;
+
+  .feature-card {
     margin-bottom: 40px;
   }
-  
-  .testimonial {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f9fc;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .testimonial p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    position: relative;
-  }
-  
-  .testimonial p::before {
-    content: '“';
-    font-size: 3rem;
-    color: #004aad;
-    position: absolute;
-    top: -20px;
-    left: 20px;
-  }
-  
-  .testimonial h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .testimonial {
-      padding: 15px;
-    }
-  
-    #testimonials h2 {
-      font-size: 2rem;
-    }
-  
-    .testimonial p {
-      font-size: 1rem;
-    }
-  
-    .testimonial h3 {
-      font-size: 1rem;
-    }
-  }
-  
-  
+}
+
+
+/* Meet Our Doctors Section */
+#doctors {
+  background-color: #f7f9fc;
+  padding: 80px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#doctors h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 50px;
+}
+
+.doctor-card {
+  display: inline-block;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.doctor-card img {
+  width: 100%;
+  border-bottom: 5px solid #004aad;
+  height: 50%;
+}
+
+.doctor-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 15px 0 5px;
+}
+
+.doctor-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Hover Effects */
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-card:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
