@@ -1,3 +1,6 @@
+
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAaaJseTDTDjGq3zdLWkuu0GeV-O9CjkAM",
   authDomain: "healthline-4a04c.firebaseapp.com",
@@ -8,9 +11,9 @@ const firebaseConfig = {
   measurementId: 'G-VP5G3TXF2N',
 };
 
-// Initialize Firebase (use compat to avoid modular issues)
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 // Initialize services
-const auth = firebase.auth();
-const db = firebase.firestore();
+const auth = getAuth(app);
+const db = getFirestore(app);

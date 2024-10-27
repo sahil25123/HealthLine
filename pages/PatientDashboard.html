@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patient Dashboard - HealthLine</title>
   <link rel="stylesheet" href="/assets/styles/PatientDashboard.css">
+  <script defer src="/assets/scripts/dashboard.js"></script>
 </head>
 <body>
+  <!-- Header Section -->
   <header class="header">
     <div class="header-container">
       <!-- Logo -->
@@ -24,6 +26,7 @@
           <li class="nav-item"><a href="/medical-records" class="nav-link">Medical Records</a></li>
           <li class="nav-item"><a href="/prescriptions" class="nav-link">Prescriptions</a></li>
           <li class="nav-item"><a href="/analytics" class="nav-link">Analytics</a></li>
+          <li class="nav-item"><a href="/support" class="nav-link">Support</a></li>
         </ul>
       </nav>
 
@@ -42,36 +45,60 @@
       </div>
     </div>
   </header>
-  <main class="main-content"></main>
+
+  <!-- Hero Section with Greeting -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 id="greeting">Good day, John Doe</h1>
+      <p>Welcome back! Stay on top of your health with HealthLine.</p>
+    </div>
+    <img src="/assets/images/hero-image.jpg" alt="Health Dashboard" class="hero-image">
+  </section>
+
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <!-- Overview Section -->
     <section class="overview">
       <h2>Overview</h2>
       <div class="overview-cards">
-        <div class="card">
-          <img src="/assets/images/icons/appointments.svg" alt="Appointments" class="card-icon">
+        <!-- Appointments Card -->
+        <div class="card appointments-card">
+          <div class="card-icon-container">
+            <img src="/assets/images/icons/appointments.svg" alt="Appointments" class="card-icon">
+          </div>
           <div class="card-content">
             <h3>Appointments</h3>
-            <p>Manage your upcoming and past appointments with ease.</p>
+            <p>You have <span id="appointment-count">0</span> upcoming appointments.</p>
             <a href="/appointments" class="card-link">View Appointments</a>
           </div>
         </div>
-        <div class="card">
-          <img src="/assets/images/icons/records.svg" alt="Medical Records" class="card-icon">
+        <!-- Medical Records Card -->
+        <div class="card medical-records-card">
+          <div class="card-icon-container">
+            <img src="/assets/images/icons/records.svg" alt="Medical Records" class="card-icon">
+          </div>
           <div class="card-content">
             <h3>Medical Records</h3>
             <p>Access and review your medical history securely.</p>
             <a href="/medical-records" class="card-link">View Records</a>
           </div>
         </div>
+        <!-- Prescriptions Card -->
         <div class="card">
-          <img src="/assets/images/icons/prescriptions.svg" alt="Prescriptions" class="card-icon">
+          <div class="card-icon-container">
+            <img src="/assets/images/icons/prescriptions.svg" alt="Prescriptions" class="card-icon">
+          </div>
           <div class="card-content">
             <h3>Prescriptions</h3>
             <p>Track and manage your prescriptions and medication.</p>
             <a href="/prescriptions" class="card-link">View Prescriptions</a>
           </div>
         </div>
+        <!-- Analytics Card -->
         <div class="card">
-          <img src="/assets/images/icons/analytics.svg" alt="Analytics" class="card-icon">
+          <div class="card-icon-container">
+            <img src="/assets/images/icons/analytics.svg" alt="Analytics" class="card-icon">
+          </div>
           <div class="card-content">
             <h3>Analytics</h3>
             <p>Monitor your health trends and insights over time.</p>
@@ -81,6 +108,6 @@
       </div>
     </section>
   </main>
-
+  <script src="/assets/scripts/PatientDashboard.js"></script>
 </body>
 </html>
